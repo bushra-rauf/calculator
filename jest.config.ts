@@ -10,7 +10,7 @@ const config: Config = {
     clearMocks: true,
     coverageProvider: "v8",
     testEnvironment: "jsdom",
-    setupFilesAfterEnv:["<rootDiv/jest.setup.ts>"]
+    setupFilesAfterEnv:["<rootDiv/jest.setup.ts>"],
 }
 
   export default createJestConfig(config)
