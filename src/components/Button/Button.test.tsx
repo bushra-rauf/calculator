@@ -10,7 +10,7 @@ test('The labal on button is correctly render',()=> {
 })
 
 test('On click button event triggers', ()=> {
-    const mockClick = jest.fn()
+    const mockClick = ()=>{}
     render(<Button label='1' onClick={mockClick}/>)
     fireEvent.click(screen.getByRole('button', {
         name: '1'
