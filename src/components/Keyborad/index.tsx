@@ -1,16 +1,3 @@
-// import {digits, operators} from '@/Data/data'
-// import Button from '../Button'
-// const Keyboard = ( {onClick}:{onClick:(value: string)=> void}) => {
-//     return(
-//         <div>
-//           {digits.map((digit)=><Button  label={digit}onClick={onClick}>{digit}</Button>)}
-//           {operators.map((operator)=><Button label={operator}onClick={onClick}>{operator}</Button>)}
-//         </div>
-//     )
-// }
-
-// export default Keyboard
-
 import { digits, operators } from '@/Data/data'
 import Button from '../Button'
 

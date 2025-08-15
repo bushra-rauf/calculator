@@ -7,15 +7,15 @@ import { evaluate } from "mathjs";
 export default function Home() {
   const [input, setInput] = useState ('')
     const [result, setResult] = useState('');
-  const [history, setHistory] = useState<string[]>([]);
- 
  
   const handleClick = (value: string) => {
-    if (value === '=') {
+    if (value === 'clear') {
+      handleClear();
+    }
+      else if  (value === '=') {
       try {
          const result = evaluate(input);
          setResult(result);
-         setHistory([...history, `${input} = ${result}`]);
       } catch (error){
         setResult('Error')
       }
