@@ -16,7 +16,7 @@ import Button from '../Button'
 
 const Keyboard = ({ onClick }: { onClick: (value: string) => void }) => {
   return (
-    <div className='grid grid-cols-3 gap-2 border-2 p-4 rounded max-w-3xs mx-auto' >
+    <div className='grid grid-cols-3 gap-2 border-2 p-4 rounded max-w-90 mx-auto' >
       {digits.map((digit, index) => (
         <Button key={index} label={digit} onClick={onClick} />
       ))}
