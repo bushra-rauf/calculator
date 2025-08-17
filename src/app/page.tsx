@@ -1,6 +1,6 @@
 'use client'
 import Header from "@/components/Header";
-import Keyboard from "@/components/Keyborad";
+import Keyboard from "@/components/Keyboard";
 import { useState } from "react";
 import Display from "@/components/Display";
 import { evaluate } from "mathjs";
