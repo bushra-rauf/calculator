@@ -36,7 +36,6 @@ export default function Home() {
   return (
     <div className="font-sans  ">
       <Header pageTitle="Calculator"/>
-     
       < Display input={input} result={result}/>
       <div className="flex justify-center px-auto my-4">
       <BackButton onBackspace={handleBackspace}/>
