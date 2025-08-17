@@ -4,9 +4,10 @@ import Keyboard from "@/components/Keyborad";
 import { useState } from "react";
 import Display from "@/components/Display";
 import { evaluate } from "mathjs";
+import BackButton from "@/components/BackButton";
 export default function Home() {
   const [input, setInput] = useState ('')
-    const [result, setResult] = useState('');
+  const [result, setResult] = useState('');
  
   const handleClick = (value: string) => {
     if (value === 'clear') {
@@ -29,12 +30,17 @@ export default function Home() {
     setResult('');
   };
  
+   const handleBackspace = () => {
+       setInput(prev => prev.slice(0, -1));
+     }
   return (
     <div className="font-sans  ">
       <Header pageTitle="Calculator"/>
      
       < Display input={input} result={result}/>
-     
+      <div className="flex justify-center px-auto my-4">
+      <BackButton onBackspace={handleBackspace}/>
+      </div>
       <Keyboard onClick={handleClick}/>
     </div>
   );
