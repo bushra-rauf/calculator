@@ -9,7 +9,7 @@ const BackButton = ({ onBackspace }: BackButtonProps) => {
       onClick={onBackspace}
       className="border-2 p-6 border-amber-400 bg-red-500 text-white px-32  py-4 rounded hover:bg-red-600"
     >
-      ⌫ BackSpace 
+     BackSpace 
     </button>
   );
 };
